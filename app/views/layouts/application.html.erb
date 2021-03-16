@@ -40,10 +40,10 @@
       <% if user_signed_in? %>
         <div id="navbarExampleTransparentExample" class="navbar-menu">
           <div class="navbar-item">
-            
+            <%= link_to "Recipes", recipes_path, class: "navbar-item button is-warning is-light" %>
           </div>
           <div class="navbar-item">
-          
+            <%= link_to "Post new recipe", new_recipe_path, class: "navbar-item button is-warning is-light" %>
           </div>
           <div class=" navbar-end">
             <div class="navbar-item">
